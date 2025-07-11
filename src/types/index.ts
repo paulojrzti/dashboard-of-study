@@ -1,3 +1,4 @@
+export * from './avatarsList'
 export * from './formComponent'
 export * from './styled'
 export * from './theme'
