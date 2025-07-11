@@ -20,7 +20,7 @@ function Login() {
             sx={{ alignItems: 'center', display: 'flex', height: '100vh' }}
           >
             <Container maxWidth="sm">
-              <Box sx={{ marginBttom: pxToRem(24) }}>
+              <Box sx={{ marginBottom: pxToRem(24) }}>
                 <Logo height={41} width={100} />
               </Box>
               <Box sx={{ marginBottom: pxToRem(24) }}>
