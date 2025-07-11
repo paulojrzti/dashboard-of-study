@@ -25,7 +25,7 @@ export default function Header() {
           <Link to={'/home'}>
             <Logo height={30} width={73} />
           </Link>
-          <Link to={'/home'}>
+          <Link to={'/perfil'}>
             <Avatar
               alt="Dnc Avatar"
               src="/dnc-avatar.svg"
