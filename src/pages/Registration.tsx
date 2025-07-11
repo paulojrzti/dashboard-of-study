@@ -1,5 +1,13 @@
 import { Box, Container, Grid } from '@mui/material'
-import { BannerImage } from '@/components'
+import {
+  BannerImage,
+  FormComponet,
+  StyledH1,
+  StyledP,
+  StyledUl,
+  Logo,
+} from '@/components'
+import { pxToRem } from '@/utils'
 
 function Registration() {
   return (
@@ -13,7 +21,46 @@ function Registration() {
             sx={{ alignItems: 'center', display: 'flex', height: '100vh' }}
           >
             <Container maxWidth="sm">
-              <h1>Registration</h1>
+              <Box sx={{ marginBottom: pxToRem(24) }}>
+                <Logo height={41} width={100} />
+              </Box>
+              <Box sx={{ marginBttom: pxToRem(24) }}>
+                <StyledH1>Faça seu cadastro</StyledH1>
+                <StyledP>Primeiro, diga-nos quem você é </StyledP>
+              </Box>
+              <StyledUl>
+                <li>Entre 8 e 16 caracteres;</li>
+                <li>Pelo menos uma letra maiúscula;</li>
+                <li>Pelo menos um caracter especial</li>
+                <li>Pelo menos um numero</li>
+              </StyledUl>
+              <FormComponet
+                input={[
+                  {
+                    type: 'text',
+                    placeholder: 'Nome completo',
+                  },
+                  {
+                    type: 'email',
+                    placeholder: 'Email',
+                  },
+                  {
+                    type: 'telefone',
+                    placeholder: 'Telefone',
+                  },
+                ]}
+                buttons={[
+                  {
+                    className: 'primary',
+                    type: 'submit',
+                    children: 'Próximo',
+                  },
+                ]}
+                message={{
+                  msg: 'Sucesso',
+                  type: 'success',
+                }}
+              ></FormComponet>
             </Container>
           </Grid>
 
