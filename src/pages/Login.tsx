@@ -23,7 +23,7 @@ function Login() {
               <Box sx={{ marginBttom: pxToRem(24) }}>
                 <Logo height={41} width={100} />
               </Box>
-              <Box sx={{ marginBttom: pxToRem(24) }}>
+              <Box sx={{ marginBottom: pxToRem(24) }}>
                 <StyledH1>Login</StyledH1>
                 <StyledP>Digite sua senha e email para logar</StyledP>
               </Box>
